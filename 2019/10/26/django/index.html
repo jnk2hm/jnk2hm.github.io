@@ -5,12 +5,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Archive: 2019</title>
+    <title>django - 蒋南轲的博客</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    
+    <meta name="description" content="‘’’
+‘’’1.创建一个空文件夹：mkdir django1905
+2.进入文件夹：
+cd django1905
+3.创建虚拟环境：
+方法1：python 3安装： linux下：python3 ,"> 
     <meta name="author" content="jnk"> 
     <link rel="alternative" href="atom.xml" title="蒋南轲的博客" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -31,57 +36,97 @@
 <body class="loading">
     <span id="config-title" style="display:none">蒋南轲的博客</span>
     <div id="loader"></div>
-    <div id="single" class="page">
-    <div id="top">
-        <a class="icon-left image-icon" href="javascript:history.back()"></a>
-    </div>
-    <div class="section">
-        <div class="article">
-            <div class="main">
-                <div class="content">
-                    <div class="timeline">
-                      <h2 class="timeline-title">归档: 5篇</h2>
-                      
-                      
-                        
-                          <h3 class="timeline-subtitle">2019</h3>
-                        
-                        <div class="timeline-item">
-                          <time>2019-10-26</time>
-                          <a target="_self" href="/2019/10/26/django/">django</a>
-                        </div>
-                      
-                        
-                        <div class="timeline-item">
-                          <time>2019-10-23</time>
-                          <a target="_self" href="/2019/10/23/hello-world/">Hello World</a>
-                        </div>
-                      
-                        
-                        <div class="timeline-item">
-                          <time>2019-10-23</time>
-                          <a target="_self" href="/2019/10/23/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">Hexo博客搭建</a>
-                        </div>
-                      
-                        
-                        <div class="timeline-item">
-                          <time>2019-10-23</time>
-                          <a target="_self" href="/2019/10/23/vim%E7%BC%96%E8%BE%91%E5%99%A8%E4%B9%8B%E7%A5%9E/">vim编辑器之神</a>
-                        </div>
-                      
-                        
-                        <div class="timeline-item">
-                          <time>2019-10-21</time>
-                          <a target="_self" href="/2019/10/21/%E5%B8%B8%E7%94%A8Linux%E7%B3%BB%E7%BB%9F%E6%8C%87%E4%BB%A4/">常用Linux系统指令</a>
-                        </div>
-                      
-                    </div>
-                </div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">django</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
             </div>
+            <div id="qr"></div>
         </div>
     </div>
+    <div class="scrollbar"></div>
 </div>
 
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">django</h1>
+        <div class="stuff">
+            <span>十月 26, 2019</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <p>‘’’</p>
+<p>‘’’<br>1.创建一个空文件夹：<br>mkdir django1905</p>
+<p>2.进入文件夹：</p>
+<p>cd django1905</p>
+<p>3.创建虚拟环境：</p>
+<p>方法1：python 3安装：<br> linux下：python3 -m venv venv</p>
+<p>方法2:virtualenv工具安装：<br>pip install virtualenv<br>cd到存放虚拟环境的目录下执行: virtualenv 虚拟环境名</p>
+<p>4.激活虚拟环境：<br>linux下：source ./bin/activate<br>window: source Scripts/activate</p>
+<p>5.退出虚拟环境：<br>deactivate</p>
+<p>6.安装django依赖项：<br>pip install django</p>
+<p>7.检查安装的依赖项是否有版本冲突：<br>pip check</p>
+<p>8.查看安装的版本：<br>pip freeze</p>
+<p>===============<br>创建django项目：<br>1.检查是否有django-admin 命令<br>django-admin –version</p>
+<p>2.建项目：<br>django-admin startproject django1905 .    – 在当前路径下创建项目</p>
+<p>3.运行服务器：<br>python manage.py runserver    </p>
+<p> — 如果出错Watching for file changes with StatReloader<br>原因：可能是Django版本和Python版本或者PyMysql版本不一致</p>
+<p>解决：升级或者降级Django版本<br>pip install django==2.1.8</p>
+<p>再执行：<br>window:<br>python manage.py runserver</p>
+<p>linux:<br>pytohn manage.py runserver 0.0.0.0:端口号     –  使用的时间用：公网IP地址:端口号</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/5146554.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/qq/001faIUs4M2zna.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class='side'>
+            
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
 </body>
 <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
